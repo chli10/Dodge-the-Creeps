@@ -19,7 +19,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"fly",
-"speed": 5.0
+"speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -48,7 +48,8 @@ animations = [{
 radius = 36.0
 height = 124.0
 
-[node name="Mob" type="RigidBody2D"]
+[node name="Mob" type="RigidBody2D" groups=["mobs"]]
+collision_mask = 0
 gravity_scale = 0.0
 script = ExtResource("1_f0beg")
 
